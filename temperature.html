@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> temperature converter</title>
+        <link rel="stylesheet" href="css/styling.css"/>
+        <script>
+            function temp()
+            {
+                var c,f,k,r;
+                c=parseInt(document.getElementById("celcius").value);
+                f=((9/5)*c)+32;
+                k=c+273.15;
+                r=((9/5)*c)+491.67;
+                document.getElementById("fahrenheit").value=f;
+                document.getElementById("kelvin").value=k;
+                document.getElementById("rankine").value=r;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="type">
+            <h1 style="text-align: center;"> Temperature Converter </h1> <br>
+            <p>Celcius:<input id="celcius"></p> 
+            <p>Fahrenheit:<input id="fahrenheit"></p>
+            <p>Kelvin:<input id="kelvin"></p>
+            <p>Rankine:<input id="rankine"></p>
+            <button onclick="temp()"> convert </button>
+        </div>
+        <div class="image">
+            <img src="C:\Users\gayat\OneDrive\Pictures/temp.png" class="thermometer">
+        </div>
+    </body>
+</html>
